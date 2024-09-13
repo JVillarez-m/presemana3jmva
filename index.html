@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeliManía - Revive la mágia del cine en casa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Logo y slogan -->
+    <table id="logo-slogan">
+        <tr>
+            <td>
+                <img src="logo.png" alt="PeliManía Logo">
+            </td>
+            <td>
+                <div class="title">PeliManía</div>
+                <div class="slogan">Revive la mágia del cine en casa</div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Barra de navegación -->
+    <table id="nav-bar">
+        <tr>
+            <td>
+                <a href="#inicio">Inicio</a> 
+                <a href="#peliculas">Películas</a> 
+                <a href="#contacto">Contacto</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Mensaje de bienvenida -->
+    <table id="message">
+        <tr>
+            <td>
+                <marquee behavior="alternate" scrollamount="10">
+                    <div class="marquee-text">¡Bienvenido a PeliManía! Grandes ofertas disponibles.</div>
+                </marquee>
+            </td>
+        </tr>
+    </table>
+    
+    <h1>¡Encuentra tu película!</h1>
+    
+    <!-- Sección de películas -->
+    <table id="movies">
+        <tr>
+            <td>
+                <img src="joker.png" alt="El joker"><br>
+                <div class="movie-title">El joker</div><br>
+                El Joker (2019) narra el descenso de Arthur Fleck, un hombre marginado, hacia la locura, convirtiéndose en el villano Joker en una sociedad que lo ignora y oprime.
+            </td>
+            <td>
+                <img src="linterna-verde.jpg" alt="Linterna verde"><br>
+                <div class="movie-title">Linterna Verde</div><br>
+                Linterna Verde (2011) sigue a Hal Jordan, un piloto que recibe un anillo de poder que lo convierte en parte de una fuerza intergaláctica encargada de proteger el universo, enfrentando a un temible villano llamado Parallax.
+            </td>
+            <td>
+                <img src="Dragonball.jpg" alt="Dragon Ball Evolution"><br>
+                <div class="movie-title">Dragon Ball Evolution</div><br>
+                Dragonball Evolution (2009) sigue a Goku, un joven que debe reunir las Esferas del Dragón para detener al malvado Piccolo y salvar al mundo.
+            </td>
+        </tr>
+    </table>
+
+    <!-- Sección de pedidos -->
+    <h2>Hacer un Pedido</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Película:</td>
+                <td>
+                    <select name="pelicula">
+                        <option value="pelicula1">Película 1</option>
+                        <option value="pelicula2">Película 2</option>
+                        <option value="pelicula3">Película 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cantidad:</td>
+                <td><input type="number" name="cantidad" min="1" value="1"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Hacer Pedido">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
